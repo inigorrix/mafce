@@ -1,0 +1,22 @@
+{
+    "default_values": {
+        "k": 150,
+        "sim_slider_precision": 25,
+        "error": 5,
+        "min_mot_vel": 1,
+        "max_mot_vel": 120,
+        "mot_slider_divs": 5,
+        "w_cel_carga": 85,
+        "sca_n_measures": 5
+    },
+    "current_values": {
+        "k": 6,
+        "sim_slider_precision": 25,
+        "error": 5,
+        "min_mot_vel": 1,
+        "max_mot_vel": 120,
+        "mot_slider_divs": 5,
+        "w_cel_carga": 85,
+        "sca_n_measures": 5
+    }
+}
