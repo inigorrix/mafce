@@ -12,8 +12,17 @@ The code for reading the HX711 ADC for Weigh Scales on Rasperry PIs (hx711.py sc
 
 ![assembly](https://github.com/inigorrix/mafce/blob/main/docs/assembly.gif?raw=true)
 
-This repository contains both the code of the UI and the instructions for the robot.
-The user is able to control the machine using a touchscreen.
+## Abstract
+
+With the goal of improving the experience of using educational models in the labs at ETSIDI, it is posed designing and manufacturing a mechatronic device that can replace the weight system currently used. Building upon a prototype created a year ago, a new machine is developed, correcting its deficiencies and upgrading some of its components.
+
+The solution proposed, in order to apply the desired force, uses a load cell suspended from the point of application of the laboratory machine, from which, hangs a rope attached to the cell by an elastic band. The opposite end of the string is attached to a pulley, coupled to the shaft of a stepper motor. This electronically controlled motor rotates the pulley in one direction or the opposite, causing the rope to wind up, thereby increasing the applied force, or to unwind, achieving the opposite effect. The load cell measures the force applied at each moment, and this data is used by the algorithm that controls the motor to achieve the desired value in the shortest possible time. This way, the system, installed in an ad hoc designed casing, allows to efficiently apply a vertical and downward force equivalent to a user-specified weight up to 2 kg, with a maximum error of 10 grams.
+
+To achieve this result, it was necessary to work in multiple disciplines. The programming of the simulation algorithm was carried out on a Raspberry Pi, in the Python programming language. The user can interact with the machine through a touch screen thanks to a graphical user interface designed with the Qt graphic library and its adaptation for Python, PyQt. Two manufacturing techniques have been used for the construction of the device: laser cutting and 3D printing; and every piece of the casing has been designed with the manufacturing process in mind.
+
+---
+
+This repository contains both the code for the instructions for the robot and the code for the UI that enabled the user to control the machine using a touchscreen.
 Below is an overview of the five tabs of the UI and a brief description of what each of them is for.
 
 
